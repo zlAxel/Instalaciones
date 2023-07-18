@@ -1,0 +1,159 @@
+	
+	Ir a la ruta:
+
+		- cd ../..
+		- cd wamp64/www/Proyectos_Laravel
+	
+
+	Creación de proyecto:
+
+		- wsl 
+
+		- curl -s "https://laravel.build/example-app" | bash
+		CON COMPOSER
+		- composer create-project laravel/laravel nombre_proyecto
+
+		* Instalación de Livewire:
+			
+			- sail composer require livewire/livewire
+	
+
+	Ejecución del proyecto:
+
+		- wsl 
+
+		- ./vendor/bin/sail up
+		- ./vendor/bin/sail down
+
+		Ejecución con ALIAS
+		- sail up
+		- sail down
+
+
+	Actualización de estilos (Tailwind):
+
+		- sail npm run watch
+
+		Ejecución del servidor: 
+		- sail npm run dev
+
+
+	Crear controlador:
+
+		- sail artisan make:controller NombreController
+		- sail artisan make:controller CARPETA\\NombreController
+
+	
+	Ejecutar migraciones:
+
+		- sail artisan migrate
+		- sail artisan migrate:rollback // REGRESAR CAMBIOS
+
+	
+	Agregar componentes:
+
+		- sail artisan make:component ListarPost
+
+	
+	Agregar migraciones:
+
+		- sail artisan make:migration nombre_table
+
+
+	Agregar Policy:
+
+		- sail artisan make:policy PostPolicy --model=Post
+
+
+	Crear Múltiples cosas:
+
+		- sail artisan make:model --migration --factory --controller NOMBRE
+
+		
+	Limpiar vistas (cache):
+
+		- sail artisan view:clear
+
+		
+	Mostar listado de urls:
+
+		- sail artisan route:list
+		- sail artisan route:cache // Límpia cache
+
+
+	BASES DE DATOS:
+
+		- sail mysql -u
+		- show databases;
+		- use database
+		- show tables;
+
+	
+	Creación de alias (BASH):
+
+		- sudo nano ~/.bashrc
+
+			alias sail="./vendor/bin/sail"
+
+		- source ~/.bashrc          <---- Refrescar cambios
+
+
+	Crear BUILDS para subir a producción:
+
+		- sail npm run build
+
+		GIT: 
+		
+			- zlAxel
+			- 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
+
+
+			- git init
+			- git add .
+
+			- git commit -m "Comienzo del Deployment"
+			- git branch -M main
+			- git remote add origin https://github.com/zlAxel/devstagram.git
+
+			- Agregar token creado desde la configuración de Git
+
+			- git push -u origin main
+			- git switch -c deployment
+
+			// Una vez modificado el AppServiceProvider ejecutar:
+
+			- git add .
+			- git commit -m "AppServiceProvider con https"
+			- git push -u origin deployment
+
+			// Una vez creados el htaccess y el Procfile, ejecutar:
+
+			- git add .
+			- git commit -m "Procfile y htaccess"
+
+			Alternar entre proyecto principal (Desarrollo o Producción):
+
+			- git switch main 
+			- git switch deployment
+
+			- git push -u origin deployment
+
+
+
+
+-- Ubicación para controladores -- 
+App\Http\Controllers\PruebasController@index
+
+
+app/Providers/AppServiceProvider.php ---- Schema::defaultStringLength(191); --- use Illuminate\Support\Facades\Schema; // Documento para cambiar los valores por defecto
+
+
+DOCUMENTACIÓN LARAVEL
+
+CONTROLADORES
+https://laravel.com/docs/9.x/controllers#actions-handled-by-resource-controller
+
+HELPERS
+https://laravel.com/docs/9.x/helpers
+
+

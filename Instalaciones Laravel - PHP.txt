@@ -1,0 +1,201 @@
+
+	Ubicación:
+
+		- cd ../..
+		- cd ".\Sistemas\Proyectos Laravel\"
+		- cd .\LaravelRealtime\
+		
+		- cd .\LaravelPagos\
+
+
+	Creación de proyecto:
+
+		- composer create-project laravel/laravel C:\wamp64\www\Proyectos_Laravel\Nombre_del_proyecto --prefer-dist
+		
+		- composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
+
+
+	Ejecución del servidor:
+
+		- php artisan serve
+		- npm run dev 
+
+
+	Instalación de Breeze:
+
+		- composer require laravel/breeze --dev
+		- php artisan breeze:install
+		- npm install 
+
+		- npm run dev
+		- php artisan migrate // Migrar tablas creadas por Breeze
+
+
+	Instalación de Livewire:
+
+		- composer require livewire/livewire
+		# - php artisan livewire:publish --assets
+
+		Incluir
+
+			- @livewireStyles
+			- @livewireScripts
+
+
+	Crear componente de Livewire:
+
+		- php artisan make:livewire ShowNotifications
+
+
+	Instalación de Tailwind CSS y VITE:
+
+		- npm install -D tailwindcss postcss autoprefixer
+		- npx tailwindcss init -p
+		- Agregar al tailwind.config.js => Entrar en el arreglo "content" y pegar lo que está dentro del parentesis del sig renglón:
+		- ('./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php', './storage/framework/views/*.php', './resources/views/**/*.blade.php')
+
+		- Agregar al app.css (@tailwind base; @tailwind components; @tailwind utilities;)
+
+		- npm install -g vite
+
+
+	Creación de una migración (TABLA):
+
+		- php artisan make:migration create_categorias_table
+		Asociarlo a una tabla
+		- php artisan make:migration create_categorias_table --create=nombre_tabla
+
+
+	Ejecución de las migraciones (Crear tablas):
+
+		- php artisan migrate
+		- php artisan migrate:rollback 
+		- php artisan migrate:rollback --step=2 || Regresar un número indeterminado migraciones
+		- php artisan migrate:fresh    || Reinicia todas las migraciones
+
+	
+	Creación de un Modelo: 
+
+		- php artisan make:model Categoria -m
+	
+
+	Creación de un Controlador: (Singular y primera en mayuscula)
+
+		- php artisan make:controller nombre_controlador
+		- php artisan make:controller nombre_controlador -r // Crea todo lo necesario para un formulario
+		- php artisan make:controller nombre_controlador -r --model=nombreModelo // Crea todo lo necesario para un formulario
+		- php artisan make:controller nombre_controlador --invokable // Hace que el controlador solo tenga un método
+		
+
+	Creación de un Seeder:
+		
+		- php artisan make:seeder SalarioSeeder
+
+
+	Creación de un Componente(Para guardar HTML reutilizable):
+
+		- php artisan make:component NombreComponent
+
+
+	Creación de un Request():
+
+		- php artisan make:request NombreRequest
+
+		
+	Ejecución del seeder:
+
+		- php artisan db:seed
+
+
+	Publicar las traducciones de laravel:
+
+		- php artisan vendor:publish --tag=laravel-pagination
+
+		> Para los correos:
+
+		- php artisan vendor:publish --tag=laravel-notifications
+
+
+	Crear link simbolico para storage:
+
+		- php artisan storage:link
+
+
+	Crear notificaciones en Laravel:
+
+		- php artisan make:notification NombreNotificacion
+		- php artisan notifications:table
+		- php artisan migrate
+
+
+	Agregar Policy:
+
+		- php artisan make:policy PostPolicy --model=Post
+
+
+	Creación de middlewares:
+
+		- php make:middleware RolUsuario
+
+
+	Creación de Guzzle Http:
+
+		- composer require guzzlehttp/guzzle
+
+
+	Instalación de Dropzone:
+
+		- npm install --save dropzone
+		- <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+		https://docs.dropzone.dev/getting-started/installation/npm-or-yarn
+
+
+	Instalación de Intervetion image:
+
+		- composer.phar require intervention/image
+		
+		https://image.intervention.io/v2/introduction/installation
+
+
+	Crear FACTORY, para realizar inserciones de prueba en la base de datos:
+
+		- php artisan make:factory NombreFactory
+		
+			* Ejecutar factory
+
+				- php artisan tinker
+				- App\Models\MODELO::factory()->times(200)->create(); 
+		
+		https://image.intervention.io/v2/introduction/installation
+
+	
+	- ================================================================
+	- Sección de Realtime (Sockets / Pusher)
+
+		- Creación de librerías de PUSHER 
+
+			> composer require pusher/pusher-php-server
+			> npm install --save-dev laravel-echo pusher-js
+
+		- Creación de "Eventos"
+
+			> php artisan make:event UserSessionChanged
+
+		
+		- Creación de Listeners
+
+			> php artisan make:listener BroadcastUserLoginNotification
+
+
+		- Instalación del certificado
+
+			> https://stackoverflow.com/questions/29822686/curl-error-60-ssl-certificate-unable-to-get-local-issuer-certificate
+	
+
+
+-- Ubicación para controladores -- 
+App\Http\Controllers\PruebasController@index
+
+
+app/Providers/AppServiceProvider.php ---- Schema::defaultStringLength(191); --- use Illuminate\Support\Facades\Schema; // Documento para cambiar los valores por defecto
