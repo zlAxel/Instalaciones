@@ -173,6 +173,7 @@
 	- ================================================================
 	- Sección de Realtime (Sockets / Pusher)
 
+	
 		- Creación de librerías de PUSHER 
 
 			> composer require pusher/pusher-php-server
