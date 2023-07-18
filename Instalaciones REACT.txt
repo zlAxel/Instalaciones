@@ -1,0 +1,96 @@
+
+    - Ingresar a la ruta 
+
+        > cd ../..
+        > cd '.\Sistemas\Sistemas React\criptos-react\'
+
+
+    - Creación del proyecto [VITE]
+    
+        > npm init vite@latest
+
+        > npm install
+        > npm run dev
+
+
+    - Ejecución del proyecto
+
+        > npm run dev
+
+
+    - Snippets
+
+        > rfce | Crea una función
+        > rafc | Crea un arrow function
+
+    - Creación de Swipable Lists
+
+        > npm i react-swipeable-list
+        > npm i prop-types
+
+    - Instalación de graficas
+
+        > npm i react-circular-progressbar
+        > npm install react-move
+        > npm install d3-ease
+
+
+    - Construcción para producción:
+
+        - Con build:
+
+            > npm run build
+
+        - Con GitHub:
+
+            - zlAxel
+            - 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
+
+            > git init
+            > git add .
+
+            > git commit -m "first commit"
+            > git branch -M main
+            > git remote add origin https://github.com/zlAxel/citas_react.git
+            > git push -u origin main
+
+            - Agregar branches
+
+            > git checkout -b nuevo-header main # Se crea nuevo branch para identificar el cambio
+            > git add . # Se agregan todos los archivos modificados
+            > git commit -m "No fue mucho trabajo, pero fue trabajo honesto" # Se envía y se agrega el comentario
+            > git checkout main # Se regresa al branch original
+
+            - Aplicar cambios del branch creado y se elimina una vez unidos
+
+            > git merge nuevo-header # Se une el branch MAIN con nuestro branch
+            > git branch -d nuevo-header # Se elimina el branch creado
+
+            > git push -u origin main # Se aplican los cambios al MAIN
+
+            - Cursito
+
+            > https://www.atlassian.com/es/git/tutorials/syncing
+
+
+
+
+
+    - Instalación de Tailwind
+
+        > npm i -D tailwindcss postcss autoprefixer
+        > npx tailwindcss init -p
+
+        - Agregar a index.css
+
+            - @tailwind base;
+            - @tailwind components;
+            - @tailwind utilities;
+
+        - Sustituir "content" en tailwind.config.js
+
+            - content: ['./index.html'],
+
+    - Instalación de Emotion (STYLED COMPONENTS):
+
+        > npm install @emotion/react @emotion/styled

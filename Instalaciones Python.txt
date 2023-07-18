@@ -1,0 +1,43 @@
+
+
+
+Creación del entorno virtual:
+
+	py -m virtualenv venv
+
+		-- Activación del entorno virtual
+
+			.\venv\Scripts\activate
+
+
+Instalación de Django:
+
+	pip install Django
+
+
+Creación del proyecto:
+
+	django-admin startproject name_project .
+
+
+		Creación de la Aplicación:
+
+			py manage.py startapp App
+
+
+Instalación de Pycryptodome:
+
+	pip3 install pycryptodome
+
+
+Actualizar Pip:
+
+	python.exe -m pip install --upgrade pip
+
+
+
+
+Agregar al original
+
+	Documentación para el modelo de usuario:
+	https://docs.djangoproject.com/en/4.1/topics/auth/customizing/#django.contrib.auth.models.CustomUser
