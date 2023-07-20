@@ -189,7 +189,15 @@
 
 			> php artisan make:listener BroadcastUserLoginNotification
 
+		
+		- Creación de comandos de Laravel
 
+			> php artisan make:command GameExecutor
+
+				> Ejecución del comando ( php artisan comando:accion )
+
+
+				
 		- Instalación del certificado
 
 			> https://stackoverflow.com/questions/29822686/curl-error-60-ssl-certificate-unable-to-get-local-issuer-certificate
