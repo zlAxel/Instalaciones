@@ -1,0 +1,21 @@
+
+- Ingresar a la ruta 
+
+    > cd ../..
+    > cd '.\Sistemas\Sistemas React\tesla-landing\'
+
+
+- Creación del proyecto con Astro
+
+    > npm create astro@latest
+
+
+- Ejecución del proyecto 
+
+    > npm run dev
+
+
+- Instalación de Tailwind CSS  
+
+    > npx astro add tailwind 
+    > YES TO ALL

@@ -3,7 +3,7 @@
 
 		- cd ../..
 		- cd ".\Sistemas\Proyectos Laravel\"
-		- cd .\LaravelRealtime\
+		- cd .\LaravelRealtimeRmk\
 		
 		- cd .\LaravelPagos\
 
@@ -177,17 +177,20 @@
 
 		- Creación de librerías de PUSHER 
 
-			> composer require pusher/pusher-php-server
-			> npm install --save-dev laravel-echo pusher-js
+			> composer require pusher/pusher-php-server 	( Instalación de librerías de pusher para php )
+			> npm install --save-dev laravel-echo pusher-js ( Instalación de librerías de pusher para javascript )
+
+			- En app.php deshabilitar el comentario de App\Providers\BroadcastServiceProvider::class,
 
 		- Creación de "Eventos"
 
-			> php artisan make:event UserSessionChanged
+			> php artisan make:event UserSessionChanged 
 
 		
 		- Creación de Listeners
 
-			> php artisan make:listener BroadcastUserLoginNotification
+			> php artisan make:listener BroadcastUserLoginNotification 
+			( Un listener sirve para escuchar un evento y realizar una acción por ejemplo enviar un correo )
 
 		
 		- Creación de comandos de Laravel
