@@ -76,7 +76,7 @@
 	
 	Creación de un Modelo: 
 
-		- php artisan make:model Categoria -m
+		- php artisan make:model Categoria -m 
 	
 
 	Creación de un Controlador: (Singular y primera en mayuscula)
@@ -204,6 +204,36 @@
 		- Instalación del certificado
 
 			> https://stackoverflow.com/questions/29822686/curl-error-60-ssl-certificate-unable-to-get-local-issuer-certificate
+
+
+
+
+		- ================================================================
+		- Retos de Realtime (Sockets / Pusher)
+
+			¡Claro! Aquí tienes tres retos de complejidad fácil que involucran el uso de Laravel Echo, Pusher, API REST y Axios:
+
+			- Reto 1: Mostrar notificaciones en tiempo real
+				Crea una tabla en la base de datos para almacenar notificaciones.
+				Implementa una API REST en Laravel para crear notificaciones y almacenarlas en la base de datos.
+				Utiliza Laravel Echo y Pusher para escuchar las nuevas notificaciones y mostrarlas en tiempo real en el frontend.
+
+			- Reto 2: Actualización en tiempo real de comentarios
+				Crea una API REST en Laravel para manejar comentarios en una publicación.
+				Utiliza Axios en el frontend para enviar y recibir comentarios de la API.
+				Utiliza Laravel Echo y Pusher para escuchar los nuevos comentarios y actualizar la lista de comentarios en tiempo real sin recargar la página.
+
+			- Reto 3: Sala de chat en tiempo real
+				Crea una tabla en la base de datos para almacenar mensajes de chat.
+				Implementa una API REST en Laravel para manejar mensajes de chat.
+				Utiliza Axios en el frontend para enviar y recibir mensajes de chat de la API.
+				Utiliza Laravel Echo y Pusher para mostrar los mensajes de chat en tiempo real y permitir la comunicación en una sala de chat entre usuarios conectados.
+				Estos retos te permitirán practicar y familiarizarte con el uso de Laravel Echo, Pusher, API REST y Axios para construir aplicaciones en tiempo real. A medida que vayas avanzando, puedes aumentar la complejidad de los retos, agregando más funcionalidades y características a tus aplicaciones en tiempo real. ¡Buena suerte!
+			
+		- ================================================================
+			
+
+
 	
 
 
