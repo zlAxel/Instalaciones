@@ -2,7 +2,7 @@
     - Ingresar a la ruta 
 
         > cd ../..
-        > cd '.\Sistemas\Sistemas React\criptos-react\'
+        > cd '.\Sistemas\Sistemas React\crm-react\'
 
 
     - Creación del proyecto [VITE]
@@ -11,6 +11,27 @@
 
         > npm install
         > npm run dev
+
+    
+    - Instalación de tailwind y postcss
+
+        > npm install -D tailwindcss postcss autoprefixer
+        > npx tailwindcss init -p
+
+        - Sustituir el index.css por el siguiente:
+
+            - @tailwind base;
+            - @tailwind components;
+            - @tailwind utilities;
+
+        - Sustituir "content" en tailwind.config.js
+
+            - content: ['./index.html','./src/**/*.{js,ts,jsx,tsx}',],
+
+
+    - Instalación de react-router-dom
+
+        > npm install react-router-dom
 
 
     - Ejecución del proyecto
