@@ -3,7 +3,7 @@
 
 		- cd ../..
 		- cd ".\Sistemas\Proyectos Laravel\"
-		- cd .\LaravelRealtimeRmk\
+		- cd .\APIRestful\
 		
 		- cd .\ServerWebSocket\
 
@@ -13,6 +13,11 @@
 		- composer create-project laravel/laravel C:\wamp64\www\Proyectos_Laravel\Nombre_del_proyecto --prefer-dist
 		
 		- composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
+
+
+		Actualizar el proyecto: 
+
+			- composer update
 
 
 	Ejecución del servidor:
@@ -213,6 +218,61 @@
 			> Seleccionar la opción de "BeyondCode\LaravelWebSockets\WebSocketsServiceProvider"
 
 			> php artisan migrate
+
+
+
+		- ================================================================
+		- Sección de API's Restful
+
+
+			- Para la instalación de Vagrant
+
+				> En caso de tener problemas con el instalador, ir a
+				"https://github.com/hashicorp/vagrant/issues/10162"
+			
+			
+			- Instalación de Homestead
+
+				> composer require laravel/homestead 
+				> vendor\\bin\\homestead make
+
+			
+			- Creamos las llaves SSH
+
+				> ssh-keygen -t rsa -b 4096
+
+
+			- Dentro de la siguiente ruta 
+
+				> C:\Windows\System32\drivers\etc
+
+				- Agregar las siguiente líneas al archivo "hosts":
+
+					# IP para las API's
+					192.168.56.56 apirestful.test
+
+
+			- Creación de la maquina virtual
+
+				> vagrant up
+
+
+			- Ejecución de la maquina virtual
+
+				> vagrant status
+
+				- Conectarse a la maquina virtual 
+
+					> vagrant ssh
+
+						> cd code
+						> ls -a
+
+					> exit
+
+				- Apagar la maquina virtual
+
+					> vagrant halt 
 
 
 				
