@@ -82,6 +82,17 @@
 		- php artisan migrate:rollback --step=2 || Regresar un número indeterminado migraciones
 		- php artisan migrate:fresh    || Reinicia todas las migraciones
 
+		Creación de migraciones para tablas intermedias:
+
+			- php artisan make:migration create_category_post_table --create=category_post
+			- php artisan make:migration create_category_product_table --create=category_product
+
+				- 1. Se debe crear un modelo para cada tabla intermedia
+				- 2. Es necesario poner los nombres de los modelos en el método "belongsToMany" de cada modelo
+
+				- Nota: El nombre de la tabla intermedia debe ser el nombre de los modelos en orden alfabético y en plural
+
+
 	
 	Creación de un Modelo: 
 
@@ -176,6 +187,7 @@
 
 				- php artisan tinker
 				- App\Models\MODELO::factory()->times(200)->create(); 
+				- App\Models\MODELO::factory(200)->create(); // Otra forma de ejecutarlo
 		
 		https://image.intervention.io/v2/introduction/installation
 

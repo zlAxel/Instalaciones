@@ -38,6 +38,10 @@
 
         > npm run dev
 
+        - Ejecución del servidor Api JSON
+
+            > json-server --watch db.json
+
 
     - Snippets
 
