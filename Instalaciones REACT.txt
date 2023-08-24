@@ -2,7 +2,7 @@
     - Ingresar a la ruta 
 
         > cd ../..
-        > cd '.\Sistemas\Sistemas React\crm-react\'
+        > cd '.\Sistemas\Sistemas React\todolist-react\'
 
 
     - Creación del proyecto [VITE]
@@ -41,6 +41,10 @@
         - Ejecución del servidor Api JSON
 
             > json-server --watch db.json
+
+            - Instalación de json-server
+
+                > npm install -g json-server
 
 
     - Snippets
@@ -119,3 +123,47 @@
     - Instalación de Emotion (STYLED COMPONENTS):
 
         > npm install @emotion/react @emotion/styled
+
+
+    - ================================================================
+    - Retos de React (React Router DOM)
+
+        > ( Lista de Tareas ) https://www.youtube.com/watch?v=3q5FwUxOoMQ
+
+            Por supuesto, entiendo lo que necesitas. Aquí tienes un esquema de lo que podría incluir un proyecto 
+            completo de ToDo List utilizando React, JavaScript, JSON Server y React Router DOM:
+
+            - 1. Lista de Tareas:
+                Mostrar una lista de tareas con título y estado (completado o pendiente).
+                Mostrar un botón para marcar una tarea como completada o pendiente.
+                Mostrar un botón para eliminar una tarea.
+                Usar React Router DOM para la navegación entre la lista y el formulario de agregar tareas.
+
+            - 2. Formulario para Agregar Tareas:
+                Mostrar un formulario con un campo de texto para ingresar el título de la tarea.
+                Validar que el campo no esté vacío antes de permitir agregar la tarea.
+                Enviar la tarea al servidor JSON cuando se agrega.
+
+            - 3. Funcionalidades de JSON Server:
+                Crear una API simulada usando JSON Server para almacenar las tareas.
+                Implementar rutas para obtener, crear, actualizar y eliminar tareas.
+
+            - 4. React Router DOM:
+                Configurar rutas usando React Router DOM para mostrar la lista de tareas y el formulario por separado.
+                Usar Link para navegar entre las diferentes páginas.
+
+            - 5. Estilos:
+                Estilizar la aplicación utilizando CSS o bibliotecas como Tailwind CSS.
+                Aplicar estilos a la lista de tareas, el formulario y los botones.
+
+            - 6. Otras Funcionalidades:
+                Agregar una barra de búsqueda para filtrar las tareas por título.
+                Implementar una opción para marcar todas las tareas como completadas.
+                Mostrar estadísticas, como el número total de tareas y el número de tareas completadas.
+                Agregar una opción para borrar todas las tareas completadas.
+                Recuerda que este es solo un esquema general y puedes personalizarlo según tus preferencias y necesidades. El proyecto puede expandirse aún más agregando funcionalidades como autenticación, edición de tareas, prioridades, etiquetas, etc. ¡Espero que este esquema te ayude a desarrollar un proyecto completo y enriquecedor!
+        
+        
+        
+        
+        
