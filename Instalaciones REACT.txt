@@ -2,15 +2,23 @@
     - Ingresar a la ruta 
 
         > cd ../..
-        > cd '.\Sistemas\Sistemas React\todolist-react\'
+        > cd '.\Sistemas\Sistemas React\miduchollos\'
 
 
     - Creación del proyecto [VITE]
     
         > npm init vite@latest
+        > npm init vite@latest miduchollos -- --template react
 
         > npm install
         > npm run dev
+
+    
+    - Instalación de linter ( Standard )
+
+        > npm install standard -D
+
+        * Es una instalación que ayuda a mantener un código limpio y ordenado
 
     
     - Instalación de tailwind y postcss
@@ -32,6 +40,7 @@
     - Instalación de react-router-dom
 
         > npm install react-router-dom
+        > npm install react-router-dom -E
 
 
     - Ejecución del proyecto
@@ -123,6 +132,17 @@
     - Instalación de Emotion (STYLED COMPONENTS):
 
         > npm install @emotion/react @emotion/styled
+
+    
+    - Instalació de ion-icons
+
+        > https://www.npmjs.com/package/lord-icon-element
+        > https://lordicon.com/docs/web
+
+
+    - Instalación de Sonner
+
+        > https://sonner.emilkowal.ski/
 
 
     - ================================================================
