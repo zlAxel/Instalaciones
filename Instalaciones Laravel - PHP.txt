@@ -3,10 +3,8 @@
 
 		- cd ../..
 		- cd ".\Sistemas\Proyectos Laravel\"
-		- cd .\APIRestful\
+		- cd .\laravel-quiosco\
 		
-		- cd .\ServerWebSocket\
-
 
 	Creación de proyecto:
 

@@ -2,7 +2,8 @@
     - Ingresar a la ruta 
 
         > cd ../..
-        > cd '.\Sistemas\Sistemas React\miduchollos\'
+        > cd '.\Sistemas\Sistemas React\'
+        > cd '.\react-quiosco\'
 
 
     - Creación del proyecto [VITE]
@@ -34,13 +35,19 @@
 
         - Sustituir "content" en tailwind.config.js
 
-            - content: ['./index.html','./src/**/*.{js,ts,jsx,tsx}',],
+            content: [
+                './index.html',
+                './src/**/*.{js,ts,jsx,tsx}', 
+                './src/assets/css/main.css', // * Observa los componentes CSS de Tailwind
+              ],
+
+            ( Reiniciar el proyecto para que se apliquen los cambios )
 
 
     - Instalación de react-router-dom
 
         > npm install react-router-dom
-        > npm install react-router-dom -E
+        > npm install react-router-dom -E # * El parametro -E es para que no se actualice la versión
 
 
     - Ejecución del proyecto
@@ -71,6 +78,10 @@
         > npm i react-circular-progressbar
         > npm install react-move
         > npm install d3-ease
+
+    - Instalación de React Modal
+
+        > npm install react-modal
 
 
     - Construcción para producción:
