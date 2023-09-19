@@ -94,7 +94,8 @@
 	
 	Creación de un Modelo: 
 
-		- php artisan make:model Categoria -m 
+		- php artisan make:model Categoria -m
+		- php artisan make:model Categoria -mcr --api // Crea un modelo, migración y el controlador con los métodos de una API
 	
 
 	Creación de un Controlador: (Singular y primera en mayuscula)
@@ -104,6 +105,12 @@
 		- php artisan make:controller nombre_controlador -r // Crea todo lo necesario para un formulario
 		- php artisan make:controller nombre_controlador -r --model=nombreModelo // Crea todo lo necesario para un formulario
 		- php artisan make:controller nombre_controlador --invokable // Hace que el controlador solo tenga un método
+
+
+	Creación de un Resource:
+
+	- php artisan make:resource CategoriaCollection
+	- php artisan make:resource CategoriaResource
 		
 
 	Creación de un Seeder:
@@ -124,6 +131,7 @@
 	Ejecución del seeder:
 
 		- php artisan db:seed
+		- php artisan migrate:refresh --seed  // Elimina todas las tablas y las vuelve a crear con los datos de los seeders
 
 
 	Publicar las traducciones de laravel:

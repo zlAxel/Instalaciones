@@ -50,6 +50,16 @@
         > npm install react-router-dom -E # * El parametro -E es para que no se actualice la versión
 
 
+    - Instalación de axios
+
+        > npm install axios
+
+    
+    - Instalación de SWR
+
+        > npm install swr
+
+
     - Ejecución del proyecto
 
         > npm run dev
@@ -82,6 +92,12 @@
     - Instalación de React Modal
 
         > npm install react-modal
+
+    - Instalación de React Toastify
+
+        > npm install react-toastify
+
+        https://fkhadra.github.io/react-toastify/introduction/
 
 
     - Construcción para producción:
