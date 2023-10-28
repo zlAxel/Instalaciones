@@ -1,234 +1,240 @@
 
 	Ubicación:
 
-		- cd ../..
-		- cd ".\Sistemas\Proyectos Laravel\"
-		- cd .\laravel-quiosco\
+		> cd ../..
+		> cd ".\Sistemas\Proyectos Laravel\"
+		> cd '.\dulces-calaquin-server\'
+
+		# > cd .\laravel-quiosco\
 		
 
 	Creación de proyecto:
 
-		- composer create-project laravel/laravel C:\wamp64\www\Proyectos_Laravel\Nombre_del_proyecto --prefer-dist
+		> composer create-project laravel/laravel C:\wamp64\www\Proyectos_Laravel\Nombre_del_proyecto --prefer-dist
 		
-		- composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
+		> composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
 
 
 		Actualizar el proyecto: 
 
-			- composer update
+			> composer update
 
 
 	Ejecución del servidor:
 
-		- php artisan serve
-		- npm run dev 
+		> php artisan serve
+		> npm run dev 
 
-		- php artisan serve --port=8001
+		> php artisan serve --port=8001
 
-		- php artisan websockets:serve
+		> php artisan websockets:serve
 
 
 	Instalación de Breeze:
 
-		- composer require laravel/breeze --dev
-		- php artisan breeze:install
-		- npm install 
+		> composer require laravel/breeze 
+		> composer require laravel/breeze --dev (Para instalarlo en modo desarrollo)
 
-		- npm run dev
-		- php artisan migrate // Migrar tablas creadas por Breeze
+		> php artisan breeze:install
+		> php artisan breeze:install api
+		> npm install 
+
+		> npm run dev
+		> php artisan migrate // Migrar tablas creadas por Breeze
 
 
 	Instalación de Livewire:
 
-		- composer require livewire/livewire
-		# - php artisan livewire:publish --assets
+		> composer require livewire/livewire
+		# > php artisan livewire:publish --assets
 
 		Incluir
 
-			- @livewireStyles
-			- @livewireScripts
+			> @livewireStyles
+			> @livewireScripts
 
 
 	Crear componente de Livewire:
 
-		- php artisan make:livewire ShowNotifications
+		> php artisan make:livewire ShowNotifications
 
 
 	Instalación de Tailwind CSS y VITE:
 
-		- npm install -D tailwindcss postcss autoprefixer
-		- npx tailwindcss init -p
-		- Agregar al tailwind.config.js => Entrar en el arreglo "content" y pegar lo que está dentro del parentesis del sig renglón:
-		- ('./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php', './storage/framework/views/*.php', './resources/views/**/*.blade.php')
+		> npm install -D tailwindcss postcss autoprefixer
+		> npx tailwindcss init -p
+		> Agregar al tailwind.config.js => Entrar en el arreglo "content" y pegar lo que está dentro del parentesis del sig renglón:
+		> ('./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php', './storage/framework/views/*.php', './resources/views/**/*.blade.php')
 
-		- Agregar al app.css (@tailwind base; @tailwind components; @tailwind utilities;)
+		> Agregar al app.css (@tailwind base; @tailwind components; @tailwind utilities;)
 
-		- npm install -g vite
+		> npm install -g vite
 
 
 	Creación de una migración (TABLA):
 
-		- php artisan make:migration create_categorias_table
+		> php artisan make:migration create_categorias_table
+		> php artisan make:migration add_pin_column_to_users_table
 		Asociarlo a una tabla
-		- php artisan make:migration create_categorias_table --create=nombre_tabla
+		> php artisan make:migration create_categorias_table --create=nombre_tabla
 
 
 	Ejecución de las migraciones (Crear tablas):
 
-		- php artisan migrate
-		- php artisan migrate:rollback 
-		- php artisan migrate:rollback --step=2 || Regresar un número indeterminado migraciones
-		- php artisan migrate:fresh    || Reinicia todas las migraciones
+		> php artisan migrate
+		> php artisan migrate:rollback 
+		> php artisan migrate:rollback --step=2 || Regresar un número indeterminado migraciones
+		> php artisan migrate:fresh    || Reinicia todas las migraciones
 
 		Creación de migraciones para tablas intermedias:
 
-			- php artisan make:migration create_category_post_table --create=category_post
-			- php artisan make:migration create_category_product_table --create=category_product
+			> php artisan make:migration create_category_post_table --create=category_post
+			> php artisan make:migration create_category_product_table --create=category_product
 
-				- 1. Se debe crear un modelo para cada tabla intermedia
-				- 2. Es necesario poner los nombres de los modelos en el método "belongsToMany" de cada modelo
+				> 1. Se debe crear un modelo para cada tabla intermedia
+				> 2. Es necesario poner los nombres de los modelos en el método "belongsToMany" de cada modelo
 
-				- Nota: El nombre de la tabla intermedia debe ser el nombre de los modelos en orden alfabético y en plural
+				> Nota: El nombre de la tabla intermedia debe ser el nombre de los modelos en orden alfabético y en plural
 
 
 	
 	Creación de un Modelo: 
 
-		- php artisan make:model Categoria -m
-		- php artisan make:model Categoria -mcr --api // Crea un modelo, migración y el controlador con los métodos de una API
+		> php artisan make:model Categoria -m
+		> php artisan make:model Categoria -mcr --api // Crea un modelo, migración y el controlador con los métodos de una API
 	
 
 	Creación de un Controlador: (Singular y primera en mayuscula)
 
-		- php artisan make:controller nombre_controlador
-		- php artisan make:controller Subcarpeta\nombre_controlador
-		- php artisan make:controller nombre_controlador -r // Crea todo lo necesario para un formulario
-		- php artisan make:controller nombre_controlador -r --model=nombreModelo // Crea todo lo necesario para un formulario
-		- php artisan make:controller nombre_controlador --invokable // Hace que el controlador solo tenga un método
+		> php artisan make:controller NombreController
+		> php artisan make:controller Subcarpeta\NombreController
+		> php artisan make:controller NombreController -r // Crea todo lo necesario para un formulario
+		> php artisan make:controller NombreController -r --model=nombreModelo // Crea todo lo necesario para un formulario
+		> php artisan make:controller NombreController --invokable // Hace que el controlador solo tenga un método
 
 
 	Creación de un Resource:
 
-	- php artisan make:resource CategoriaCollection
-	- php artisan make:resource CategoriaResource
+	> php artisan make:resource CategoriaCollection
+	> php artisan make:resource CategoriaResource
 		
 
 	Creación de un Seeder:
 		
-		- php artisan make:seeder SalarioSeeder
+		> php artisan make:seeder SalarioSeeder
 
 
 	Creación de un Componente(Para guardar HTML reutilizable):
 
-		- php artisan make:component NombreComponent
+		> php artisan make:component NombreComponent
 
 
 	Creación de un Request():
 
-		- php artisan make:request NombreRequest
+		> php artisan make:request NombreRequest
 
 		
 	Ejecución del seeder:
 
-		- php artisan db:seed
-		- php artisan migrate:refresh --seed  // Elimina todas las tablas y las vuelve a crear con los datos de los seeders
+		> php artisan db:seed
+		> php artisan migrate:refresh --seed  // Elimina todas las tablas y las vuelve a crear con los datos de los seeders
 
 
 	Publicar las traducciones de laravel:
 
-		- php artisan vendor:publish --tag=laravel-pagination
+		> php artisan vendor:publish --tag=laravel-pagination
 
 		> Para los correos:
 
-		- php artisan vendor:publish --tag=laravel-notifications
+		> php artisan vendor:publish --tag=laravel-notifications
 
 
 	Crear link simbolico para storage:
 
-		- php artisan storage:link
+		> php artisan storage:link
 
 
 	Crear notificaciones en Laravel:
 
-		- php artisan make:notification NombreNotificacion
-		- php artisan notifications:table
-		- php artisan migrate
+		> php artisan make:notification NombreNotificacion
+		> php artisan notifications:table
+		> php artisan migrate
 
 
 	Agregar Policy:
 
-		- php artisan make:policy PostPolicy --model=Post
+		> php artisan make:policy PostPolicy --model=Post
 
 
 	Creación de middlewares:
 
-		- php make:middleware RolUsuario
+		> php make:middleware RolUsuario
 
 
 	Creación de Guzzle Http:
 
-		- composer require guzzlehttp/guzzle
+		> composer require guzzlehttp/guzzle
 
 
 	Instalación de Dropzone:
 
-		- npm install --save dropzone
-		- <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+		> npm install --save dropzone
+		> <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 
 		https://docs.dropzone.dev/getting-started/installation/npm-or-yarn
 
 
 	Instalación de Intervetion image:
 
-		- composer.phar require intervention/image
+		> composer.phar require intervention/image
 		
 		https://image.intervention.io/v2/introduction/installation
 
 
 	Crear FACTORY, para realizar inserciones de prueba en la base de datos:
 
-		- php artisan make:factory NombreFactory
+		> php artisan make:factory NombreFactory
 		
 			* Ejecutar factory
 
-				- php artisan tinker
-				- App\Models\MODELO::factory()->times(200)->create(); 
-				- App\Models\MODELO::factory(200)->create(); // Otra forma de ejecutarlo
+				> php artisan tinker
+				> App\Models\MODELO::factory()->times(200)->create(); 
+				> App\Models\MODELO::factory(200)->create(); // Otra forma de ejecutarlo
 		
 		https://image.intervention.io/v2/introduction/installation
 
 	
-	- ================================================================
-	- Sección de Realtime (Sockets / Pusher)
+	> ================================================================
+	> Sección de Realtime (Sockets / Pusher)
 
 
-		- Creación de librerías de PUSHER 
+		> Creación de librerías de PUSHER 
 
 			> composer require pusher/pusher-php-server:7.0.2  
 			> composer require pusher/pusher-php-server 	( Instalación de librerías de pusher para php )
 			> npm install --save-dev laravel-echo pusher-js ( Instalación de librerías de pusher para javascript )
 
-			- En app.php deshabilitar el comentario de App\Providers\BroadcastServiceProvider::class,
+			> En app.php deshabilitar el comentario de App\Providers\BroadcastServiceProvider::class,
 
-		- Creación de "Eventos"
+		> Creación de "Eventos"
 
 			> php artisan make:event UserSessionChanged 
 
 		
-		- Creación de Listeners
+		> Creación de Listeners
 
 			> php artisan make:listener BroadcastUserLoginNotification 
 			( Un listener sirve para escuchar un evento y realizar una acción por ejemplo enviar un correo )
 
 		
-		- Creación de comandos de Laravel
+		> Creación de comandos de Laravel
 
 			> php artisan make:command GameExecutor
 
 				> Ejecución del comando ( php artisan comando:accion )
 
 
-		- Instalación de WebSockets
+		> Instalación de WebSockets
 		
 			> composer require beyondcode/laravel-websockets -w    ( Es necesario tener instalado Pusher )
 
@@ -239,47 +245,47 @@
 
 
 
-		- ================================================================
-		- Sección de API's Restful
+		> ================================================================
+		> Sección de API's Restful
 
 
-			- Para la instalación de Vagrant
+			> Para la instalación de Vagrant
 
 				> En caso de tener problemas con el instalador, ir a
 				"https://github.com/hashicorp/vagrant/issues/10162"
 			
 			
-			- Instalación de Homestead
+			> Instalación de Homestead
 
 				> composer require laravel/homestead 
 				> vendor\\bin\\homestead make
 
 			
-			- Creamos las llaves SSH
+			> Creamos las llaves SSH
 
 				> ssh-keygen -t rsa -b 4096
 
 
-			- Dentro de la siguiente ruta 
+			> Dentro de la siguiente ruta 
 
 				> C:\Windows\System32\drivers\etc
 
-				- Agregar las siguiente líneas al archivo "hosts":
+				> Agregar las siguiente líneas al archivo "hosts":
 
 					# IP para las API's
 					192.168.56.56 apirestful.test
 
 
-			- Creación de la maquina virtual
+			> Creación de la maquina virtual
 
 				> vagrant up
 
 
-			- Ejecución de la maquina virtual
+			> Ejecución de la maquina virtual
 
 				> vagrant status
 
-				- Conectarse a la maquina virtual 
+				> Conectarse a la maquina virtual 
 
 					> vagrant ssh
 
@@ -288,42 +294,42 @@
 
 					> exit
 
-				- Apagar la maquina virtual
+				> Apagar la maquina virtual
 
 					> vagrant halt 
 
 
 				
-		- Instalación del certificado
+		> Instalación del certificado
 
 			> https://stackoverflow.com/questions/29822686/curl-error-60-ssl-certificate-unable-to-get-local-issuer-certificate
 
 
 
 
-		- ================================================================
-		- Retos de Realtime (Sockets / Pusher)
+		> ================================================================
+		> Retos de Realtime (Sockets / Pusher)
 
 			¡Claro! Aquí tienes tres retos de complejidad fácil que involucran el uso de Laravel Echo, Pusher, API REST y Axios:
 
-			- Reto 1: Mostrar notificaciones en tiempo real
+			> Reto 1: Mostrar notificaciones en tiempo real
 				Crea una tabla en la base de datos para almacenar notificaciones.
 				Implementa una API REST en Laravel para crear notificaciones y almacenarlas en la base de datos.
 				Utiliza Laravel Echo y Pusher para escuchar las nuevas notificaciones y mostrarlas en tiempo real en el frontend.
 
-			- Reto 2: Actualización en tiempo real de comentarios
+			> Reto 2: Actualización en tiempo real de comentarios
 				Crea una API REST en Laravel para manejar comentarios en una publicación.
 				Utiliza Axios en el frontend para enviar y recibir comentarios de la API.
 				Utiliza Laravel Echo y Pusher para escuchar los nuevos comentarios y actualizar la lista de comentarios en tiempo real sin recargar la página.
 
-			- Reto 3: Sala de chat en tiempo real
+			> Reto 3: Sala de chat en tiempo real
 				Crea una tabla en la base de datos para almacenar mensajes de chat.
 				Implementa una API REST en Laravel para manejar mensajes de chat.
 				Utiliza Axios en el frontend para enviar y recibir mensajes de chat de la API.
 				Utiliza Laravel Echo y Pusher para mostrar los mensajes de chat en tiempo real y permitir la comunicación en una sala de chat entre usuarios conectados.
 				Estos retos te permitirán practicar y familiarizarte con el uso de Laravel Echo, Pusher, API REST y Axios para construir aplicaciones en tiempo real. A medida que vayas avanzando, puedes aumentar la complejidad de los retos, agregando más funcionalidades y características a tus aplicaciones en tiempo real. ¡Buena suerte!
 			
-		- ================================================================
+		> ================================================================
 			
 
 
