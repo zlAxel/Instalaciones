@@ -91,6 +91,11 @@
                 > npm install -g json-server
 
 
+    - Limpiar cache
+
+        > npm cache clean --force
+        > npm i && npm run dev
+
     - Snippets
 
         > rfce | Crea una función
@@ -123,6 +128,13 @@
         > npm install crypto-js
 
         https://www.npmjs.com/package/crypto-js
+
+
+    - Instalación de Auto Animate
+
+        > npm install @formkit/auto-animate
+
+        https://auto-animate.formkit.com/#installation
 
 
     - Construcción para producción:
