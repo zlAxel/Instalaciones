@@ -50,6 +50,7 @@
 
         > npm install @headlessui/react @heroicons/react
         > npm install -D @tailwindcss/forms
+        > npm install -D @tailwindcss/aspect-ratio
 
 
     - Instalación de Tailwind Animated
