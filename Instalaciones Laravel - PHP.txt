@@ -15,6 +15,11 @@
 		> composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
 
 
+		Cada clonación nueva, se debe ejecutar el siguiente comando para que se instalen las dependencias:
+
+			> npm install
+			> composer install
+
 		Actualizar el proyecto: 
 
 			> composer update
