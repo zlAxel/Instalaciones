@@ -3,9 +3,9 @@
 
         > cd ../..
         > cd '.\Sistemas\Sistemas React\'
-        > cd '.\guitarla-next\'
+        > cd '.\dulces-wichos-client\'
         
-        > cd '.\dulces-calaquin-client\'
+        > cd '.\guitarla-next\'
 
 
     - Creación del proyecto [VITE]
