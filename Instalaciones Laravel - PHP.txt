@@ -3,9 +3,9 @@
 
 		> cd ../..
 		> cd ".\Sistemas\Proyectos Laravel\"
+		> cd '.\terrazas-eventos-server\'
+		
 		> cd '.\dulces-calaquin-server\'
-
-		# > cd .\laravel-quiosco\
 		
 
 	Creación de proyecto:
