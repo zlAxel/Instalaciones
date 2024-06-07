@@ -49,7 +49,7 @@
 	Instalación de Breeze:
 
 		> composer require laravel/breeze 
-		> composer require laravel/breeze --dev (Para instalarlo en modo desarrollo)
+		> composer require laravel/breeze --dev (Para instalarlo en modo desarrollo )
 
 		> php artisan breeze:install
 		> php artisan breeze:install api
