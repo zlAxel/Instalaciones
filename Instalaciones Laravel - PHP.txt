@@ -3,16 +3,21 @@
 
 		> cd ../..
 		> cd ".\Sistemas\Proyectos Laravel\"
-		> cd '.\terrazas-eventos-server\'
+		> cd '.\boutique-server\'
 		
-		> cd '.\dulces-calaquin-server\'
+		> cd '.\terrazas-eventos-server\'
+		# > cd '.\dulces-calaquin-server\'
 		
 
 	Creación de proyecto:
 
 		> composer create-project laravel/laravel C:\wamp64\www\Proyectos_Laravel\Nombre_del_proyecto --prefer-dist
 		
-		> composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
+		Proyectos pequeños:
+			> composer create-project laravel/laravel Nombre_del_proyecto --prefer-dist 
+
+		Proyectos grandes:
+			> composer create-project laravel/laravel Nombre_del_proyecto 
 
 
 		Cada clonación nueva, se debe ejecutar el siguiente comando para que se instalen las dependencias:
