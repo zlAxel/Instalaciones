@@ -3,9 +3,9 @@
 
         > cd ../..
         > cd '.\Sistemas\Sistemas React\'
-        > cd '.\dulces-wichos-client\'
+        > cd '.\boutique-client\'
         
-        > cd '.\guitarla-next\'
+        > cd '.\dulces-wichos-client\'
 
 
     - Creación del proyecto [VITE]
@@ -16,6 +16,12 @@
         > npm install
         > npm run dev
 
+    - Creación del proyecto [NEXT]
+
+        > npx create-next-app@latest nombre-proyecto
+
+        > npm install
+        > npm run dev
     
     - Instalación de linter ( Standard )
 
@@ -72,6 +78,10 @@
     - Instalación de SWR
 
         > npm install swr
+
+    - Instalación de Zustand
+
+        > npm install zustand
 
 
     - Instalación de Emotion (STYLED COMPONENTS):
