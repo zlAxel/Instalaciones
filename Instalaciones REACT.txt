@@ -61,7 +61,9 @@
 
     - Instalación de Tailwind Animated
 
-            > npm i tailwindcss-animated
+            > npm install tailwindcss-animated
+
+            require('tailwindcss-animated'), // Usa el nombre correcto del módulo en tailwind.config.js
 
 
     - Instalación de react router dom
