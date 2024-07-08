@@ -182,6 +182,12 @@
 		> php artisan notifications:table
 		> php artisan migrate
 
+	- Limpiar cache, rutas, vistas, configuraciones, etc:
+
+		> php artisan cache:clear
+		> php artisan config:clear
+		> php artisan route:clear
+		> php artisan view:clear
 
 	Agregar Policy:
 
@@ -226,11 +232,26 @@
 		https://image.intervention.io/v2/introduction/installation
 
 	
-	> ================================================================
-	> Sección de Realtime (Sockets / Pusher)
+	================================================================
+	Sección INE
+
+		- Instalación de LDAP
+
+			- Habilitar extensiones en php.ini
+
+				> extension=ldap
+			
+			- Instalación de LDAP
+
+				> composer require directorytree/ldaprecord-laravel
+				> php artisan vendor:publish --provider="LdapRecord\Laravel\LdapServiceProvider"
+
+	
+	================================================================
+	Sección de Realtime (Sockets / Pusher)
 
 
-		> Creación de librerías de PUSHER 
+		- Creación de librerías de PUSHER 
 
 			> composer require pusher/pusher-php-server:7.0.2  
 			> composer require pusher/pusher-php-server 	( Instalación de librerías de pusher para php )
