@@ -3,8 +3,9 @@
 
 		> cd ../..
 		> cd ".\Sistemas\Proyectos Laravel\"
-		> cd '.\boutique-server\'
+		> cd '.\miches-adgear-server\'
 		
+		> cd '.\boutique-server\'
 		> cd '.\terrazas-eventos-server\'
 		# > cd '.\dulces-calaquin-server\'
 		
