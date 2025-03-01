@@ -4,6 +4,9 @@
         > cd ../..
         > cd '.\Sistemas\Sistemas React\'
         > cd '.\miches-adgear-client\'
+
+        > cd ".\Client\"
+		> cd '.\terrazas-eventos-client\'
         
         > cd '.\boutique-client\'
         > cd '.\dulces-wichos-client\'
