@@ -120,7 +120,7 @@
 	
 	Creación de un Modelo: 
 
-		> php artisan make:model Categoria -m
+		> php artisan make:model Categoria -m         // La opción -m crea una migración
 		> php artisan make:model Categoria -mcr --api // Crea un modelo, migración y el controlador con los métodos de una API
 	
 

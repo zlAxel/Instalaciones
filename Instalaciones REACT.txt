@@ -3,7 +3,7 @@
 
         > cd ../..
         > cd '.\Sistemas\Sistemas React\'
-        > cd '.\miches-adgear-client\'
+        > cd '.\terrazas-eventos-client\'
 
         > cd ".\Client\"
 		> cd '.\terrazas-eventos-client\'
