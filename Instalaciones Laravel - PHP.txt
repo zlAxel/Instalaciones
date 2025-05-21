@@ -208,6 +208,15 @@
 		> composer require guzzlehttp/guzzle
 
 
+	Instalación de TCPDF:
+
+		> composer require tecnickcom/tcpdf
+
+		- Agregar fuentes: 
+		
+			> php vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php -b -t TrueTypeUnicode -i C:\Users\gerardo.macias\Downloads\Fuentes\calibri-font-family\calibri-regular.ttf
+
+
 	Instalación de Dropzone:
 
 		> npm install --save dropzone
