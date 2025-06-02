@@ -3,12 +3,13 @@
 
 		> cd ../..
 		> cd ".\Sistemas\Proyectos Laravel\"
-		> cd '.\terrazas-eventos-server\'
+		> cd '.\las-clandestinas-server\'
 
 		> cd ".\Server\"
-		> cd '.\terrazas-eventos-server\'
+		> cd '.\las-clandestinas-server\'
 		
-		> cd '.\miches-adgear-server\'
+		> cd '.\las-clandestinas-server\'
+		> cd '.\terrazas-eventos-server\'
 		> cd '.\boutique-server\'
 		# > cd '.\dulces-calaquin-server\'
 		

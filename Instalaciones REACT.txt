@@ -3,11 +3,12 @@
 
         > cd ../..
         > cd '.\Sistemas\Sistemas React\'
-        > cd '.\terrazas-eventos-client\'
+        > cd '.\las-clandestinas-client\'
 
         > cd ".\Client\"
-		> cd '.\terrazas-eventos-client\'
+		> cd '.\las-clandestinas-client\'
         
+		> cd '.\terrazas-eventos-client\'
         > cd '.\boutique-client\'
         > cd '.\dulces-wichos-client\'
 
