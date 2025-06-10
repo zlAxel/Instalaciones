@@ -8,7 +8,7 @@
 		> cd ".\Server\"
 		> cd '.\las-clandestinas-server\'
 		
-		> cd '.\las-clandestinas-server\'
+		> cd ".\Server\"
 		> cd '.\terrazas-eventos-server\'
 		> cd '.\boutique-server\'
 		# > cd '.\dulces-calaquin-server\'
