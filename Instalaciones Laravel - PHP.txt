@@ -216,6 +216,8 @@
 		- Agregar fuentes: 
 		
 			> php vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php -b -t TrueTypeUnicode -i C:\Users\gerardo.macias\Downloads\Fuentes\calibri-font-family\calibri-regular.ttf
+			> php vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php -b -t TrueTypeUnicode -i C:\Users\gerardo.macias\Downloads\Fuentes\Playwrite_AU_QLD\static\PlaywriteAUQLD-Regular.ttf
+			> php vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php -b -t TrueTypeUnicode -i C:\Users\gerardo.macias\Downloads\Fuentes\Josefin_Sans\static\JosefinSans-Regular.ttf
 
 
 	Instalación de Dropzone:
