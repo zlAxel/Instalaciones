@@ -13,6 +13,9 @@ Creación del entorno virtual:
 
 			pip install -r requirements.txt
 
+			Validar la contraseña del postgreSQL
+			Crear la carpeta /static si manda error
+
 
 Instalación de Django:
 
@@ -37,6 +40,12 @@ Instalación de Pycryptodome:
 Actualizar Pip:
 
 	python.exe -m pip install --upgrade pip
+
+
+
+Guía para instalar tailwindcss en Django:
+
+	https://django-tailwind.readthedocs.io/en/latest/installation.html#
 
 
 
